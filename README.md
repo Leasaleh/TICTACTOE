@@ -4,12 +4,6 @@
 ## Description
 This is a simple Tic-Tac-Toe game implemented in Java. The game can be played between two human players or against a computer AI. The computer selects moves randomly.
 
-## Features
-- Play against another human or a computer.
-- Simple console-based interface.
-- Board displayed using a grid format.
-- Input validation for correct moves.
-- Win and draw detection.
 
 ## How to Play
 1. Run the program.
