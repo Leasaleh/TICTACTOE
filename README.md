@@ -20,9 +20,8 @@ This is a simple Tic-Tac-Toe game implemented in Java. The game can be played be
 
 
 ## Classes Overview
-1. Main (Main Class)
-The entry point of the application. It creates a Game object and starts the game.
-2. Game (Game Controller)
+
+## Game (Game Controller)
 Manages the flow of the game between two players.
 Calls the makeMove method of the current player.
 Checks if a player has won or if the game is a draw.
@@ -30,7 +29,7 @@ Handles switching between players.
 Methods:
 choosePlayers(): Prompts the user to input player names and chooses the game mode (Human vs Human or Human vs Computer).
 play(): Runs the main game loop, alternating turns between players.
-3. Grid (Game Board)
+## Grid (Game Board)
 Represents the Tic-Tac-Toe board and manages the game state.
 Contains a 3x3 grid of Square objects where players make their moves.
 Methods:
@@ -38,22 +37,22 @@ display(): Prints the current state of the game board.
 makeMove(char row, int col, char symbol): Allows a player to make a move on the board.
 checkWin(char symbol): Checks if a player has won the game.
 isFull(): Checks if the board is full, indicating a draw.
-4. Square (Represents a Square on the Board)
+## Square (Represents a Square on the Board)
 Represents each square on the Tic-Tac-Toe grid.
 Methods:
 getValue(): Returns the value stored in the square ('X', 'O', or ' ').
 setValue(char value): Sets the value of the square ('X' or 'O').
-5. Player (Abstract Player Class)
+## Player (Abstract Player Class)
 Represents a player in the game. Both the Human and Computer classes extend this class.
 Methods:
 getSymbol(): Returns the symbol of the player ('X' or 'O').
 getName(): Returns the name of the player.
 makeMove(Grid grid): Abstract method, overridden in the Human and Computer classes to define how each player makes a move.
-6. Human (Human Player)
+## Human (Human Player)
 Represents a human player who inputs their moves manually.
 Methods:
 makeMove(Grid grid): Prompts the human player to input a move (e.g., "A1", "B2"), and places their symbol on the grid.
-7. Computer (Computer Player)
+## Computer (Computer Player)
 Represents the computer player that automatically makes random moves.
 Methods:
 makeMove(Grid grid): The computer selects a random empty square on the grid to make its move.
